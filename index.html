@@ -4,6 +4,7 @@
         <title>EPIC Store Locator</title>
         <link rel="stylesheet" href="./style/style.css">
         <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+        <script src="/js/store-data.js"></script>
     </head>
     <body>
         <div class="title">Store locator</div>  
@@ -16,64 +17,23 @@
         <div class="stores-list-container">
             <div class="stores-list">
                 <div class="store-container">
+                <div class="store-info">
                     <div class="address">
-                        84080 Beverly Bvld
-                        Los Angeles, CA 90048
+                    <span> 84080 Beverly Bvld</span>
+                           <span>Los Angeles, CA 90048</span>
                     </div>
+                    <div class="phone-number">837-483-6626</div>
+                </div>
                     <div class="store-number-container">
                         <div class="store-number">
                             1
                         </div>
                     </div>
-                    <div class="phone-number">837-483-6626</div>
-                </div>
-                <div class="store-container">
-                    <div class="address">
-                        84080 Beverly Bvld
-                        Los Angeles, CA 90048
-                    </div>
-                    <div class="store-number-container">
-                        <div class="store-number">
-                            2
-                        </div>
-                    </div>
-                    <div class="phone-number">837-483-6626</div>
-                </div>
-                <div class="store-container">
-                    <div class="address">
-                        84080 Beverly Bvld
-                        Los Angeles, CA 90048
-                    </div>
-                    <div class="store-number-container">
-                        <div class="store-number">
-                            3
-                        </div>
-                    </div>
-                    <div class="phone-number">837-483-6626</div>
                 </div>
             </div>
         </div>
     <div id="map"></div>
-    <script>
-        var map;
-        function initMap() {    
-            var losAngeles = {
-                lat: 34.063380,
-                lng: -118.358080
-            }
-
-        map = new google.maps.Map(document.getElementById('map'), {
-            center: losAngeles,
-            zoom: 8
-        });
-
-        var marker = new google.maps.Marker({
-            position: losAngeles,
-            map: map,
-            title: 'Hello World!'
-          });
-
-        }
+    <script src="/js/index.js">
     </script>    
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBh15L6ZQVrZVsMjwAhb_3-X6bbgpSGtQk&callback=initMap"
     async defer></script>

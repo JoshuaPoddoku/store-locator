@@ -66,36 +66,56 @@ body {
     top: 280px;
     left: 100px;
     border-radius: 30px;
+    bottom: 20px;
 }
 
 .stores-list{
-    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-y: scroll;
+    height: 100%;
 }
 
 .address{
-    white-space: pre-line;
     line-height: 27px;
-    font-size: 18px;
+    font-size: 21px;
+    margin-top: 30px;
+}
+
+.address span{
+    display: block;
 }
 
 .phone-number{
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #454E53;   
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #B5ADAD;   
 }
 
-.store-container{
-    border-bottom-style: groove;
+.store-container{   
+    display: flex;
+    border-bottom: 1px solid #979797;
+}
+
+.store-info{
+    flex-grow: 1;
 }
 
 .store-number-container{
-    background-color: rgb(97, 95, 95);
+    margin-top: 40px;
+}
+
+
+.store-number{
+    background-color: #454E53;
     color: white;
     border-radius: 40px;
-    margin-left: 330px;
-    padding: 5px;
-    margin-top: -40px;
     display: flex;
+    align-items: center;
     justify-content: center;
+    width: 30px;
+    height: 30px;
 }
 
