@@ -1,7 +1,6 @@
 ## Google Maps API Key
 
-AIzaSyBh15L6ZQVrZVsMjwAhb_3-X6bbgpSGtQk
-
+Create your own
 **WARNING**
 DO NOT SHARE IT WITH ANYONE
 
