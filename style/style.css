@@ -96,6 +96,7 @@ body {
 
 .store-container{   
     display: flex;
+    cursor: pointer;
     border-bottom: 1px solid #979797;
 }
 
@@ -155,12 +156,28 @@ body {
     margin-right: 8px;
 }
 
+.store-container-background{
+    display: flex;
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 18px;
+    transition: background 0.2 ease-in-out;
+}
+
+.store-container-background:hover{
+    background-color: #ccc;
+}
 
 /*scroll bar styling */
 
 /* width */
 ::-webkit-scrollbar {
     width: 15px;
+    scroll-margin: 50px 0 0 50px;
+
   }
   
   /* Track */
@@ -172,6 +189,7 @@ body {
   ::-webkit-scrollbar-thumb {
     background: rgb(0, 0, 0); 
     border-radius: 10px;
+    
   }
   
   /* Handle on hover */

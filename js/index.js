@@ -106,7 +106,6 @@ var marker = new google.maps.Marker({
     infoWindow = new google.maps.InfoWindow();
     searchStores();
     setOnClickListener();
-
 }
 
 function searchStores() {
@@ -126,7 +125,7 @@ function searchStores() {
     clearLocations();
     displayStores(foundStores);
     showStoresMarkers(foundStores);
-
+    setOnClickListener();
 }
 
 function clearLocations() {
@@ -161,6 +160,7 @@ function displayStores(stores){
         var phone =  store.phoneNumber;
         storesHtml+= `
     <div class="store-container">
+      <div class="store-container-background">
         <div class="store-info">
             <div class="address">
             <span> ${address[0]}</span>
@@ -168,12 +168,13 @@ function displayStores(stores){
             </div>
             <div class="phone-number">${phone}</div>
         </div>
-            <div class="store-number-container">
-                <div class="store-number">
-                    ${index+1}
-                </div>
+        <div class="store-number-container">
+            <div class="store-number">
+                ${index+1}
             </div>
-        </div>`
+        </div>
+      </div>      
+    </div>`
     });
 
     document.querySelector('.stores-list').innerHTML = storesHtml;
